@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <center>
+    <div id="container">
+        
+        <div id="displayy">
+            <p id="display"></p>
+        </div>
+        <div id="buttoncontainer">
+            <button class="buttom" id="ac"  onclick="dis = ``;
+            document.querySelector(`#display`).innerText = dis;">AC</button>
+            <button class="buttom" onclick="dis = dis +`*`;
+            document.querySelector(`#display`).innerText = dis;">*</button>
+            <button class="buttom" onclick="dis = dis +`-`;
+            document.querySelector(`#display`).innerText = dis;">-</button>
+            <button class="buttom " onclick="dis = dis +`1`;
+            document.querySelector(`#display`).innerText = dis;">1</button>
+            <button class="buttom" onclick="dis = dis +`2`;
+            document.querySelector(`#display`).innerText = dis;">2</button>
+            <button class=" buttom" onclick="dis = dis +`3`;
+            document.querySelector(`#display`).innerText = dis;">3</button>
+            <button class=" buttom" onclick="dis = dis +`4`;
+            document.querySelector(`#display`).innerText = dis;">4</button>
+            <button class="buttom" onclick="dis = dis +`5`;
+            document.querySelector(`#display`).innerText = dis;">5</button>
+            <button class="buttom" onclick="dis = dis +`6`;
+            document.querySelector(`#display`).innerText = dis;">6</button>
+            <button class="buttom" onclick="dis = dis +`7`;
+            document.querySelector(`#display`).innerText = dis;">7</button>
+            <button class="buttom" onclick="dis = dis +`8`;
+            document.querySelector(`#display`).innerText = dis;">8</button>
+            <button class="buttom" onclick="dis = dis +`9`;
+            document.querySelector(`#display`).innerText = dis;">9</button>
+            <button class="buttom" onclick="dis = dis +`0`;
+            document.querySelector(`#display`).innerText = dis;">0</button>
+            <button class="buttom" onclick="dis = dis +`+`;
+            document.querySelector(`#display`).innerText = dis;">+</button>
+            <button class="buttom" onclick="dis = dis +`.`;
+            document.querySelector(`#display`).innerText = dis;">.</button>
+            <button class="buttom" onclick="dis = dis +`/`;
+            document.querySelector(`#display`).innerText = dis;">/</button>
+            <button class="buttom"onclick="dis=eval (dis) ;
+            document.querySelector(`#display`).innerText = dis;">=</button>
+            
+        </div>
+    </div>
+</center>
+    <script>
+        let dis = ``
+        document.querySelector(`#display`).innerText= dis;
+    </script>
+</body>
+</html>
